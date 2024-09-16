@@ -11,10 +11,10 @@ This project implements an MPEG-2 video decoder in C. It includes a set of unit 
 
 ## Building the Project
 
-1. Clone the repository:
+1. Fork and Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mpeg2-decoder.git
-cd mpeg2-decoder
+git clone https://github.com/<username>/mpeg2dc.git
+cd mpeg2dc
 ```
 
 2. Create a build directory and navigate to it:
@@ -26,7 +26,7 @@ mkdir build && cd build
 ```bash
 cmake ..
 ```
-Or, if you prefer to use Ninja:
+ Or, if you prefer to use Ninja:
 ```bash
 cmake -G Ninja ..
 ```
@@ -35,7 +35,7 @@ cmake -G Ninja ..
 ```bash
 cmake --build .
 ```
-Or, with Ninja:
+ Or, with Ninja:
 ```bash
 ninja
 ```
@@ -49,7 +49,9 @@ To run all unit tests:
 cmake --build . --target unit_test
 ```
 Or with Ninja:
+```bash
 ninja unit_test
+```
 
 To run a specific unit test:
 ```bash
@@ -89,7 +91,7 @@ ninja test
 - `include/`: Contains the header files
 - `tests/`: Contains all test-related files
   - `ffmpeg/`: FFmpeg-based integration tests
-  - `test_*.c`: Unit test files
+  - `mpeg2dc/`: Unit test files
 
 ## Contributing
 
